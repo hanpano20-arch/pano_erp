@@ -19,7 +19,7 @@ class Settings(BaseSettings):
     APP_SECRET_KEY: str = "change_me_in_production"
     APP_VERSION: str = "0.1.0"
 
-    DATABASE_URL: str = "postgresql+asyncpg://pano_user:pano_pass@localhost:5432/pano_erp"
+    DATABASE_URL: str = "sqlite+aiosqlite:///./pano_erp.db"
     DATABASE_POOL_SIZE: int = 10
     DATABASE_MAX_OVERFLOW: int = 20
     DATABASE_ECHO: bool = False
